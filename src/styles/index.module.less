@@ -1,0 +1,138 @@
+.count {
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 270px;
+        height: 90px;
+    }
+
+    .inputCont {
+        width: 580px;
+        height: 44px;
+        display: flex;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 22px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 20px;
+
+        .searchIcon {
+            width: 20px;
+            height: 20px;
+            margin: 0 17px;
+        }
+
+        input {
+            width: 480px;
+            height: 40px;
+            border: none;
+            outline: none;
+        }
+    }
+    
+    .linkCont {
+        width: 600px;
+        min-height: 120px;
+        max-height: 240px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        cursor: pointer;
+
+        .linkIcon {
+            width: 120px;
+            height: 120px;
+            position: relative;
+
+            .linkSettings {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 5px;
+            }
+
+            .linkIconImg {
+                width: 60px;
+                height: 60px;
+                background-color: #dfe1e5;
+                border-radius: 50%;
+                margin: 20px auto 10px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin: 10px;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+                margin: 0;
+                overflow: hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+            }
+        }
+
+        .linkIcon:hover {
+            background-color: #eceef0;
+        }
+    }
+}
+
+.addCont {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+
+    .addIcon {
+        width: 360px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .addInput {
+            
+            input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                background-color: #eceef0;
+                border: none;
+                outline: none;
+            }
+
+            button {
+                padding: 6px 12px;
+                background-color: #fff;
+                outline: none;
+                border: 1px solid #dfe1e5;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #dfe1e5;
+            }
+        }
+    }
+}
